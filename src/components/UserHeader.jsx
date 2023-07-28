@@ -9,20 +9,7 @@ function UserHeader() {
     const MenuIcons = <MenuIcon className="flex items-center h-9 text-white cursor-pointer"/>
     const XIcons = <XIcon className="flex items-center h-9 text-white cursor-pointer"/>
 
-    const [menu, setMenu] = useState(MenuIcons);
-
-    const changeMenu = () => {
-        let value = menu;
-
-        if (value === MenuIcons) {
-            setMenu(XIcons);
-        } else {
-
-            setMenu(MenuIcons);
-
-        } 
-
-        };
+    const [toggle, setToggle] = useState();
     
 
   return (
@@ -38,10 +25,11 @@ function UserHeader() {
             </div>
             
             <div className='flex space-x-8 items-center'>
-                <button onClick={changeMenu}>{menu} </button>
+                <button onClick={() => setToggle(!toggle)}>{!toggle ? ( MenuIcons ) : ( XIcons ) }</button>
+                
             </div>
         </header>
-        <Sidebar />
+        {toggle && <Sidebar />}
     </div>
   )
 }
