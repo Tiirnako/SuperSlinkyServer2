@@ -9,6 +9,7 @@ import Reset from './components/Reset';
 import Dashboard from './components/Dashboard';
 import Servers from './components/Servers';
 import Sidebar from './components/Sidebar';
+import McServers from './components/McServers';
 
 
 function App() {
@@ -20,14 +21,14 @@ function App() {
         <Route exact path="/" element={
             <>
             <Header />
-            <Servers />
+            <McServers />
             </>
             } />
 
             <Route exact path="/Servers" element={
             <>
             <UserHeader />
-            <Servers />
+            <McServers />
             </>
             } />
             
