@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+@layer components {
+
+.dashboard {
+    @apply
+    flex
+    items-center
+    justify-center
+  }
+  .dashboard__container {
+    @apply
+    flex
+    flex-col
+    text-center
+    bg-[#dcdcdc]
+    p-7
+  }
+  .dashboard__btn {
+    @apply
+    p-3
+    font-semibold
+    text-lg
+    m-3
+    border-none
+    text-white
+    bg-black
+  }
+  .dashboard div {
+    @apply
+    mt-2
+  }
+
+
+};
+

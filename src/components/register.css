@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+@layer components {
+
+.register {
+    @apply
+    flex
+    items-center
+    justify-center
+  }
+
+  .register__container {
+    @apply
+    flex
+    flex-col
+    text-center
+    bg-[#dcdcdc]
+    p-7
+  }
+
+  .register__textBox {
+    @apply
+    p-3
+    font-semibold
+    mb-3
+  }
+
+  .register__btn {
+    @apply
+    p-3
+    font-semibold
+    mb-3
+    border-none
+    text-white
+    bg-black
+  }
+
+  .register__google {
+    @apply
+    bg-[#4285f4]
+  }
+
+  .register div {
+    @apply
+    mt-2
+  }
+
+}

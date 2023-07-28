@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+@layer components {
+.login {
+    @apply
+    flex
+    items-center
+    justify-center
+  }
+  
+  .login__container {
+    @apply
+    flex
+    flex-col
+    text-center
+    bg-[#dcdcdc]
+    p-7
+  }
+  .login__textBox {
+    @apply
+    p-3
+    font-semibold
+    mb-3
+  }
+
+  .login__btn {
+    @apply
+    p-3
+    font-semibold
+    mb-3
+    border-none
+    text-white
+    bg-black
+  }
+
+  .login__google {
+    @apply
+    bg-[#4285f4]
+  }
+  
+  .login div {
+    @apply
+    mt-2
+  }
+}
