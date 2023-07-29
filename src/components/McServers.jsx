@@ -20,7 +20,7 @@ function McServers() {
 
           <div className="mcAll border-b-2 border-t-2 py-6">
 
-            <img className="mcLogo" src="https://raw.githubusercontent.com/Tiirnako/SuperSlinkyServer/main/images/logo.png"></img>
+            <img className="mcLogo hover:bg-[#1a1a1a83] transition-all duration-200 ease-in-out" src="https://raw.githubusercontent.com/Tiirnako/SuperSlinkyServer/main/images/logo.png"></img>
             {mcSt}
           </div>
         </div>

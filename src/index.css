@@ -86,14 +86,17 @@
   w-20 h-20
   border-2
   border-white
-  rounded-2xl;
+  rounded-2xl
+  hover:w-[88px]
+  hover:h-[88px];
 }
 
 .mc-status {
   @apply
   text-white
-  text-lg
+  text-sm
   font-semibold
   px-4
+  md:text-lg
 }
 };
