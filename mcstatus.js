@@ -1,3 +1,4 @@
+
 function mcAddStylesheet() {
     var head = document.getElementsByTagName("head")[0];
 

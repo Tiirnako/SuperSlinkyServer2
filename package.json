@@ -2,7 +2,7 @@
   "name": "superslinkyserver",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://tiirnako.github.io/SuperSlinkyServer2.0",
+  "homepage": "https://superslinkyserver.web.app/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
@@ -14,11 +14,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "@vitejs/plugin-react": "^4.0.3",
     "firebase": "^10.1.0",
-    "firebase-tools": "^12.4.6",
+    "firebase-tools": "^0.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-firebase-hooks": "^5.1.1",
+    "react-firebase-hooks": "^3.0.5",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.14.2"
   },
