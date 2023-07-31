@@ -10,23 +10,27 @@ import Dashboard from './components/Dashboard';
 import Servers from './components/Servers';
 import Sidebar from './components/Sidebar';
 import McServers from './components/McServers';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from './firebase';
 
 
 function App() {
+
+  const user = useAuthState(auth)
 
   return (
 
     <Router>
       <Routes>
 
-        <Route exact path="/" element={
+        <Route exact path="/" {...user ? <Link to="/Servers" /> : <Link to="/" />} element={
             <>
             <Header />
             <McServers />
             </>
             } />
 
-            <Route exact path="/Servers" element={
+            <Route  exact path="/Servers" { ...!user ? <Link to='/' /> : <Link to='/Servers' />} element={
             <>
             <UserHeader />
             <McServers />
@@ -54,14 +58,14 @@ function App() {
             </>
             } />
 
-            <Route exact path="/dashboard" element={
+            <Route exact { ...!user ? <Link to='/' /> : <Link to='/dashboard' />} path="/dashboard" element={
             <>
             <UserHeader />
             <Dashboard />
             </>
             } />
 
-            <Route exact path="/sidebar" element={
+            <Route exact path="/sidebar" { ...!user ? <Link to='/' /> : <Link to='/sidebar'/> } element={
             <>
             <UserHeader />
             </>
