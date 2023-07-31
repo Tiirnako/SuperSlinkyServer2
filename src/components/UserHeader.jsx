@@ -28,9 +28,9 @@ function UserHeader() {
                 </div>
 
                 <div className='hidden lg:flex items-center space-x-8'>
-            <       Link to="/Servers" className='link' onClick={ mcS }>Servers</Link>
-                    <a className='link'>Projects</a>
-                    <Link to="/Dashboard" className='link'>Profile</Link>
+            <       Link to="/Servers" className='sidebarLink px-4 py-2' onClick={ mcS }>Servers</Link>
+                    <a className='sidebarLink px-4 py-2'>Projects</a>
+                    <Link to="/Dashboard" className='sidebarLink px-4 py-2'>Profile</Link>
                     <button className=' ' onClick={() => setToggle(!toggle)}>{!toggle ? ( MenuIcons ) : ( XIcons ) }</button>
                 </div>
                 

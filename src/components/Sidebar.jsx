@@ -8,15 +8,14 @@ function Sidebar() {
     const mcS = (<div className="mc-status" data-mc-server="mc.superslinkyserver.com"></div>)
 
     return(
-        <div className='absolute sidebar border-t-2 right-0 bg-black'>
+        <div className='absolute sidebar bg-black text-white rounded-2xl border-t-2 right-0'>
             <div className='flex-col flex space-y-8 w-52 items-center p-6 '>
-                    <Link to="/Servers" className='link' onClick={ mcS }>Servers</Link>
-                    <a className='link'>Projects</a>
-                    <Link to="/Dashboard" className='link'>Profile</Link>
-                    <Link to="/" className='link justify-self-end' onClick={logout && mcS} >Logout</Link>
+                    <Link to="/Servers" className='sidebarLink' onClick={ mcS }>Servers</Link>
+                    <a className='sidebarLink'>Projects</a>
+                    <Link to="/Dashboard" className='sidebarLink'>Profile</Link>
+                    <Link to="/" className='logout justify-self-end' onClick={logout && mcS} >Logout</Link>
             </div>
         </div>
-    )
-}
+    )}
 
 export default Sidebar
